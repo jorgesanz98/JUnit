@@ -29,10 +29,7 @@ class OperadorAritmeticoTest {
 			division = OperadorAritmetico.division(a, b);
 			assertEquals(esperado, division);
 		}
-		catch (Exception e) 
-		{
-			fail();
-		}
+		catch (Exception e) {fail();}
 	}
 	@Test
 	public void divisionPorCero() {
