@@ -12,22 +12,28 @@ class PalindromoTest {
 	void test() 
 	{
 		Palindromo p1 = new Palindromo();
+		boolean resultado=(p1.palindromo("Arroz"));
 		try {
-		if(p1.palindromo("Arroz"))
+		if(resultado)
 			System.out.println("Es un palindromo");
 		else
 			System.out.println("No es un palindromo");
 		}
 		catch (Exception e) {fail();}
+		boolean esperado=false;
+		assertEquals(resultado,esperado);
 		
 		Palindromo p2 = new Palindromo();
+		boolean resultado2=(p2.palindromo("abba"));
 		try {
-		if(p2.palindromo("abba"))
+		if(resultado2)
 			System.out.println("Es un palindromo");
 		else
 			System.out.println("No es un palindromo");
 		}
 		catch (Exception e) {fail();}
+		boolean esperado2=true;
+		assertEquals(resultado2,esperado2);
 		
 	}
 
